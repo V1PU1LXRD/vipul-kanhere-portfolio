@@ -2,6 +2,7 @@
 
 import Reveal from "@/components/ui/Reveal";
 import WordReveal from "@/components/ui/WordReveal";
+import TextReveal from "@/components/ui/TextReveal";
 import CountUp from "@/components/ui/CountUp";
 
 const STATS = [
@@ -34,20 +35,16 @@ export default function About() {
       </Reveal>
 
       <div className="relative max-w-5xl">
-        <WordReveal
+        <TextReveal
           as="p"
-          delay={100}
-          stagger={0.04}
-          duration={0.9}
-          y={28}
           className="font-serif leading-[1.05] tracking-tight"
-          style={{ fontSize: "clamp(2rem, 5vw, 4.5rem)" }}
+          style={{ fontSize: "clamp(2.5rem, 6.5vw, 6rem)" }}
         >
           I design and build websites that feel{" "}
           <em className="italic text-accent font-light">calm</em> — interfaces
           that disappear into the work, motion that supports rather than
           shouts, code that respects the craft.
-        </WordReveal>
+        </TextReveal>
       </div>
 
       <div className="mt-20 md:mt-32 grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-16">
