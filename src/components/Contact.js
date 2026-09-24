@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Reveal from "@/components/ui/Reveal";
 import WordReveal from "@/components/ui/WordReveal";
+import TextReveal from "@/components/ui/TextReveal";
 import Magnetic from "@/components/ui/Magnetic";
 import TextScramble from "@/components/ui/TextScramble";
 
@@ -52,19 +53,15 @@ export default function Contact() {
       </Reveal>
 
       <div className="max-w-5xl">
-        <WordReveal
+        <TextReveal
           as="h2"
-          delay={100}
-          stagger={0.045}
-          duration={0.9}
-          y={28}
           className="font-serif leading-[1.02] tracking-tight"
-          style={{ fontSize: "clamp(2.5rem, 7vw, 6rem)" }}
+          style={{ fontSize: "clamp(3rem, 9vw, 8rem)" }}
         >
           Have a project in mind?{" "}
           <em className="italic text-accent font-light">Say hello.</em>{" "}
           I&apos;m currently taking on new work for late 2026.
-        </WordReveal>
+        </TextReveal>
       </div>
 
       <div className="mt-20 md:mt-32 border-t border-hair">

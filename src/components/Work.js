@@ -4,6 +4,11 @@ import { useEffect, useRef } from "react";
 import Reveal from "@/components/ui/Reveal";
 import gsap from "gsap";
 
+import imgStarSilver from "../assets/Star Silver Group.png";
+import imgSapa from "../assets/SAPA — Smart Attendance Pattern Analyzer.png";
+import imgPortfolio from "../assets/Portfolio.png";
+import imgWeather from "../assets/Live Weather Forecasting Website.png";
+
 const PROJECTS = [
   {
     num: "01",
@@ -13,7 +18,7 @@ const PROJECTS = [
     tags: ["E-commerce", "Warranty", "Next.js"],
     url: "https://starsilvergroup.com",
     external: true,
-    image: "",
+    image: imgStarSilver.src,
     desc: "Product catalog & warranty registration platform for pumps, cables, panels & pipes.",
   },
   {
@@ -24,7 +29,7 @@ const PROJECTS = [
     tags: ["Data Viz", "Python", "Analytics"],
     url: "https://github.com/V1PU1LXRD/SAPA-Smart-Attendance-Pattern-Analyzer",
     external: true,
-    image: "",
+    image: imgSapa.src,
     desc: "Local-hosted analytics tool that surfaces attendance patterns from student/class data.",
     github: true,
   },
@@ -36,7 +41,7 @@ const PROJECTS = [
     tags: ["Personal", "React", "GSAP"],
     url: "#",
     external: false,
-    image: "",
+    image: imgPortfolio.src,
     desc: "The site you're on — quiet, typographic, hand-animated with GSAP & Lenis.",
   },
   {
@@ -48,7 +53,7 @@ const PROJECTS = [
     url: "https://github.com/V1PU1LXRD/Live-Weather-Forecasting-with-Integration-of-Open-Weather-API",
     external: true,
     github: true,
-    image: "",
+    image: imgWeather.src,
     desc: "Real-time weather app integrating the OpenWeather API with live location search and forecasts.",
   },
 ];
@@ -127,7 +132,7 @@ export default function Work() {
                 rel={p.external ? "noopener noreferrer" : undefined}
                 data-cursor
                 {...(p.image ? { "data-preview": p.image } : {})}
-                className="group block border-b border-hair py-8 md:py-12 transition-colors duration-300"
+                className="group block border-b border-hair py-8 md:py-12"
               >
                 <div className="grid grid-cols-12 items-center gap-4 md:gap-6">
                   <div className="proj-num col-span-2 md:col-span-1 font-mono text-[10px] md:text-xs tracking-mega text-muted opacity-40">
@@ -135,7 +140,7 @@ export default function Work() {
                   </div>
                   <div className="col-span-10 md:col-span-5 min-w-0">
                     <h3
-                      className="proj-title font-serif leading-none truncate transition-all duration-400"
+                      className="proj-title font-serif leading-none truncate"
                       style={{ fontSize: "clamp(1.75rem, 4vw, 3.75rem)" }}
                     >
                       {p.title}
